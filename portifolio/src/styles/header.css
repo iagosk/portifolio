@@ -1,0 +1,25 @@
+header {
+  background-color: var(--cor-principal);
+  /* border-bottom: 2px solid #fff; */
+  color: var(--cor-texto);
+  padding: 30px;
+}
+
+.title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .4)
+}
+
+.icon-link {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+
+  .icon-link {
+    width: 40px;
+    display: block;
+  }
+}

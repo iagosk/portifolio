@@ -1,0 +1,31 @@
+.nav-link {
+  color: var(--cor-texto);
+  text-decoration: none;
+  position: relative;
+  transition: all .4s ease;
+}
+
+.nav-link:hover {
+  color: var(--spicy-paprika);
+}
+
+.nav-link::after {
+  content: '';
+  background-color: var(--spicy-paprika);
+  height: 3px;
+  width: 0;
+  position: absolute;
+  transition: width .5s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link > h3 {
+  font-weight: normal;
+}
+
+.nav-link > h3:hover {
+  font-weight: bold; 
+}
